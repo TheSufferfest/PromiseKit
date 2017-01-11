@@ -48,3 +48,4 @@
 - (AnyPromise *)promise;
 
 @end
+#endif
