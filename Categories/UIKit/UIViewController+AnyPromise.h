@@ -1,3 +1,4 @@
+#if !TARGET_OS_MAC
 #import <PromiseKit/AnyPromise.h>
 #import <UIKit/UIViewController.h>
 
@@ -88,3 +89,4 @@
 #undef PMKRationale
 
 @end
+#endif

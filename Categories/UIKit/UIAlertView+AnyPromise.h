@@ -1,3 +1,4 @@
+#if !TARGET_OS_MAC
 #import <PromiseKit/AnyPromise.h>
 #import <UIKit/UIAlertView.h>
 
@@ -38,3 +39,4 @@
 - (AnyPromise *)promise;
 
 @end
+#endif

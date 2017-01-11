@@ -1,3 +1,4 @@
+#if !TARGET_OS_MAC
 #import <PromiseKit/AnyPromise.h>
 #import <UIKit/UIActionSheet.h>
 
@@ -40,3 +41,4 @@
 - (AnyPromise *)promiseInView:(UIView *)view;
 
 @end
+#endif
