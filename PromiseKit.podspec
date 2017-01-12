@@ -94,7 +94,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Foundation' do |ss|
-    ss.ios.source_files = 'Categories/Foundation/*'
+    ss.ios.source_files = Dir['Categories/Foundation/*'] - Dir['Categories/Foundation/NSTask*']
     ss.osx.source_files = 'Categories/Foundation/*'
     ss.watchos.source_files = Dir['Categories/Foundation/*'] - Dir['Categories/Foundation/NSTask*', 'Categories/Foundation/NSURLConnection*']
     ss.dependency 'PromiseKit/CorePromise'
